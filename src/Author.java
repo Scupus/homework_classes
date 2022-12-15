@@ -1,3 +1,8 @@
 public class Author {
-    private String author;
+    private String authorName;
+
+    public Author(String authorName) {
+        this.authorName = authorName;
+    }
+
 }
