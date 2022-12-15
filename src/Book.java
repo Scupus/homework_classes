@@ -8,4 +8,13 @@ public class Book {
         this.bookName = bookName;
         this.bookYear = bookYear;
     }
+
+    public String getBookName() {
+        return this.bookName;
+    }
+
+    public int getBookYear() {
+        return this.bookYear;
+    }
+
 }
