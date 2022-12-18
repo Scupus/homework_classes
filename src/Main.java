@@ -1,15 +1,11 @@
 public class Main {
     public static void main(String[] args) {
+        Author firstAuthor = new Author("Jerome David", "Sellinger");
+        Author secondAuthor = new Author("Kurt Jr.", "Vonnegut");
+        Book firstBook = new Book("The Catcher in the Rye", firstAuthor ,1968);
+        Book  secondBook = new Book("Galapagos", secondAuthor, 1985);
+        System.out.println(firstBook);
+        System.out.println(secondBook);
 
-        Book firstBook = new Book("Galapagos", 1985);
-        Book secondBook = new Book("The Catcher in the Rye", 1951);
-        Author firstAuthor = new Author("Jerome David Salinger");
-        Author secondAuthor = new Author( "Kurt Vonnegut Jr.");
-        System.out.println("firstBook.getBookName() = " + firstBook.getBookName());
-        System.out.println("firstBook.getBookYear() = " + firstBook.getBookYear());
-        System.out.println("firstAuthor.getAuthorName() = " + firstAuthor.getAuthorName());
-        System.out.println("secondBook.getBookName() = " + secondBook.getBookName());
-        System.out.println("secondBook.getBookYear() = " + secondBook.getBookYear());
-        System.out.println("secondAuthor.getAuthorName() = " + secondAuthor.getAuthorName());
     }
 }
